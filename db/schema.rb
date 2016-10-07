@@ -12,8 +12,8 @@
 
 ActiveRecord::Schema.define(version: 20161007224207) do
 
-  create_table "products", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
-    t.string "name",                      null: false
+  create_table "products", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "name"
     t.text   "description", limit: 65535
     t.string "link"
   end
