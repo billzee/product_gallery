@@ -3,5 +3,5 @@
 #
 # Examples:
 #
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+  images = Image.create([{ link: 'teste', product_id: 1 }, { link: 'aaaaaa', product_id: 2 }])
+  categories = Category.create([{name: 'categoria1' }, {name: 'categoria2' }])

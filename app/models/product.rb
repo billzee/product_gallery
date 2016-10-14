@@ -1,3 +1,5 @@
 class Product < ApplicationRecord
-  # validates :name, presence: true
+  validates :name, presence: true
+  has_many :images
+  # validates :images, presence: true
 end
