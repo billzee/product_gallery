@@ -7,15 +7,27 @@ class ProductTest < ActiveSupport::TestCase
   end
 
   test "ct_002" do
-    product = Product.new(name: 'teste', description: 'teste', link: 'teste', category_id: @category.id)
+    product = Product.new(name: 'teste', category_id: @category.id)
     product.save
     assert product.save, "Saved the product with mandatory fields"
   end
-  
+
   test "ct_003" do
     product = Product.new()
     assert_not product.save, "Saved the product with blank fields"
   end
+
+  test "ct_005" do
+    product = Product.new(name: 'teste', description: 'teste', link: 'teste', category_id: @category.id)
+    product.save
+    assert product.save, "Saved the product with mandatory fields"
+  end
+
+  test "ct_006" do
+    product = products(:one)
+    assert Product.update(product.id, name: 'aaaaaa', description: 'aaaaaa', link: 'aaaaaa', category_id: @category.id), "Product updated"
+  end
+
 
   # test "ct_003" do
   #   product = Product.new(images: )
