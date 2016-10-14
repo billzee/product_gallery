@@ -3,5 +3,5 @@
 #
 # Examples:
 #
-  images = Image.create([{ link: 'teste', product_id: 1 }, { link: 'aaaaaa', product_id: 2 }])
-  categories = Category.create([{name: 'categoria1' }, {name: 'categoria2' }])
+# images = Image.create([{ link: 'teste', product_id: 1 }, { link: 'aaaaaa', product_id: 2 }])
+# categories = Category.create([{name: 'categoria1' }, {name: 'categoria2' }])

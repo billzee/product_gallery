@@ -36,6 +36,5 @@ ActiveRecord::Schema.define(version: 20161014032302) do
     t.index ["category_id"], name: "index_products_on_category_id", using: :btree
   end
 
-  add_foreign_key "images", "products"
   add_foreign_key "products", "categories"
 end

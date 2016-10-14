@@ -17,9 +17,9 @@ default: &default
   password: gorilaivan
   socket: /var/run/mysqld/mysqld.sock
 
-# development:
-#   <<: *default
-#   database: pg_development
+development:
+  <<: *default
+  database: pg_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".

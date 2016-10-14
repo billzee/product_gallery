@@ -1236,3 +1236,433 @@ WHERE fk.referenced_column_name is not null
   AND fk.table_schema = 'pg_development'
   AND fk.table_name = 'products'
 [0m
+  [1m[35m (410.8ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (401.3ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT GET_LOCK('5991616491606534915', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (6.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateCategories (20161014030050)
+  [1m[35m (370.7ms)[0m  [1m[35mCREATE TABLE `categories` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (17.8ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20161014030050')[0m
+  [1m[35m (51.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateProducts (20161014032216)
+  [1m[35m (429.4ms)[0m  [1m[35mCREATE TABLE `products` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `description` text, `link` varchar(255), `category_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_products_on_category_id`  (`category_id`), CONSTRAINT `fk_rails_fb915499a4`
+FOREIGN KEY (`category_id`)
+  REFERENCES `categories` (`id`)
+) ENGINE=InnoDB[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20161014032216')[0m
+  [1m[35m (129.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateImages (20161014032302)
+  [1m[35m (433.1ms)[0m  [1m[35mCREATE TABLE `images` (`id` int AUTO_INCREMENT PRIMARY KEY, `link` varchar(255), `product_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_images_on_product_id`  (`product_id`), CONSTRAINT `fk_rails_bd36e75ae4`
+FOREIGN KEY (`product_id`)
+  REFERENCES `products` (`id`)
+) ENGINE=InnoDB[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20161014032302')[0m
+  [1m[35m (40.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2016-10-14 12:20:12', '2016-10-14 12:20:12')[0m
+  [1m[35m (46.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT RELEASE_LOCK('5991616491606534915')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW CREATE TABLE `categories`[0m
+  [1m[35m (0.8ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'categories'[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW CREATE TABLE `images`[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'images'[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW CREATE TABLE `products`[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'products'[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'pg_development'
+  AND fk.table_name = 'categories'
+[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'pg_development'
+  AND fk.table_name = 'images'
+[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'pg_development'
+  AND fk.table_name = 'products'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (45.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS `pg_test`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE `pg_test` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (374.0ms)[0m  [1m[35mCREATE TABLE `categories` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=latin1[0m
+  [1m[35m (685.6ms)[0m  [1m[35mCREATE TABLE `images` (`id` int AUTO_INCREMENT PRIMARY KEY, `link` varchar(255), `product_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_images_on_product_id` USING btree (`product_id`)) ENGINE=InnoDB DEFAULT CHARSET=latin1[0m
+  [1m[35m (409.0ms)[0m  [1m[35mCREATE TABLE `products` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `description` text, `link` varchar(255), `category_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_products_on_category_id` USING btree (`category_id`)) ENGINE=InnoDB DEFAULT CHARSET=latin1[0m
+  [1m[35m (868.4ms)[0m  [1m[35mALTER TABLE `images` ADD CONSTRAINT `fk_rails_bd36e75ae4`
+FOREIGN KEY (`product_id`)
+  REFERENCES `products` (`id`)
+[0m
+  [1m[35m (970.8ms)[0m  [1m[35mALTER TABLE `products` ADD CONSTRAINT `fk_rails_fb915499a4`
+FOREIGN KEY (`category_id`)
+  REFERENCES `categories` (`id`)
+[0m
+  [1m[35m (366.0ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (53.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES ('20161014032302')[0m
+  [1m[35m (54.8ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES ('20161014032216'), ('20161014030050');
+
+[0m
+  [1m[35m (588.7ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2016-10-14 12:20:45', '2016-10-14 12:20:45')[0m
+  [1m[35m (45.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `created_at`, `updated_at`) VALUES ('categoria1', '2016-10-14 12:21:45', '2016-10-14 12:21:45')[0m
+  [1m[35m (41.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `categories` (`name`, `created_at`, `updated_at`) VALUES ('categoria2', '2016-10-14 12:21:45', '2016-10-14 12:21:45')[0m
+  [1m[35m (98.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (97.2ms)[0m  [1m[35mDROP TABLE `categories` CASCADE[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (988.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS `pg_development`[0m
+  [1m[35m (1067.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS `pg_test`[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE DATABASE `pg_development` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE DATABASE `pg_test` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (327.5ms)[0m  [1m[35mCREATE TABLE `categories` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=latin1[0m
+  [1m[35m (429.6ms)[0m  [1m[35mCREATE TABLE `images` (`id` int AUTO_INCREMENT PRIMARY KEY, `link` varchar(255), `product_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_images_on_product_id` USING btree (`product_id`)) ENGINE=InnoDB DEFAULT CHARSET=latin1[0m
+  [1m[35m (521.8ms)[0m  [1m[35mCREATE TABLE `products` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `description` text, `link` varchar(255), `category_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_products_on_category_id` USING btree (`category_id`)) ENGINE=InnoDB DEFAULT CHARSET=latin1[0m
+  [1m[35m (1013.3ms)[0m  [1m[35mALTER TABLE `images` ADD CONSTRAINT `fk_rails_bd36e75ae4`
+FOREIGN KEY (`product_id`)
+  REFERENCES `products` (`id`)
+[0m
+  [1m[35m (890.7ms)[0m  [1m[35mALTER TABLE `products` ADD CONSTRAINT `fk_rails_fb915499a4`
+FOREIGN KEY (`category_id`)
+  REFERENCES `categories` (`id`)
+[0m
+  [1m[35m (376.4ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (53.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES ('20161014032302')[0m
+  [1m[35m (55.0ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES ('20161014032216'), ('20161014030050');
+
+[0m
+  [1m[35m (489.2ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2016-10-14 12:29:39', '2016-10-14 12:29:39')[0m
+  [1m[35m (58.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (342.2ms)[0m  [1m[35mCREATE TABLE `categories` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=latin1[0m
+  [1m[35m (452.3ms)[0m  [1m[35mCREATE TABLE `images` (`id` int AUTO_INCREMENT PRIMARY KEY, `link` varchar(255), `product_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_images_on_product_id` USING btree (`product_id`)) ENGINE=InnoDB DEFAULT CHARSET=latin1[0m
+  [1m[35m (608.6ms)[0m  [1m[35mCREATE TABLE `products` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `description` text, `link` varchar(255), `category_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_products_on_category_id` USING btree (`category_id`)) ENGINE=InnoDB DEFAULT CHARSET=latin1[0m
+  [1m[35m (990.7ms)[0m  [1m[35mALTER TABLE `images` ADD CONSTRAINT `fk_rails_bd36e75ae4`
+FOREIGN KEY (`product_id`)
+  REFERENCES `products` (`id`)
+[0m
+  [1m[35m (1047.7ms)[0m  [1m[35mALTER TABLE `products` ADD CONSTRAINT `fk_rails_fb915499a4`
+FOREIGN KEY (`category_id`)
+  REFERENCES `categories` (`id`)
+[0m
+  [1m[35m (322.1ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (41.8ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES ('20161014032302')[0m
+  [1m[35m (44.1ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES ('20161014032216'), ('20161014030050');
+
+[0m
+  [1m[35m (432.6ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2016-10-14 12:29:43', '2016-10-14 12:29:43')[0m
+  [1m[35m (48.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO `images` (`link`, `product_id`, `created_at`, `updated_at`) VALUES ('teste', 1, '2016-10-14 12:29:43', '2016-10-14 12:29:43')[0m
+  [1m[35m (62.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (998.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS `pg_development`[0m
+  [1m[35m (1313.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS `pg_test`[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE DATABASE `pg_development` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE `pg_test` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (456.4ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (353.4ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT GET_LOCK('5991616491606534915', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateCategories (20161014030050)
+  [1m[35m (486.2ms)[0m  [1m[35mCREATE TABLE `categories` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20161014030050')[0m
+  [1m[35m (77.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateProducts (20161014032216)
+  [1m[35m (440.4ms)[0m  [1m[35mCREATE TABLE `products` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `description` text, `link` varchar(255), `category_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_products_on_category_id`  (`category_id`), CONSTRAINT `fk_rails_fb915499a4`
+FOREIGN KEY (`category_id`)
+  REFERENCES `categories` (`id`)
+) ENGINE=InnoDB[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20161014032216')[0m
+  [1m[35m (107.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateImages (20161014032302)
+  [1m[35m (588.8ms)[0m  [1m[35mCREATE TABLE `images` (`id` int AUTO_INCREMENT PRIMARY KEY, `link` varchar(255), `product_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_images_on_product_id`  (`product_id`), CONSTRAINT `fk_rails_bd36e75ae4`
+FOREIGN KEY (`product_id`)
+  REFERENCES `products` (`id`)
+) ENGINE=InnoDB[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20161014032302')[0m
+  [1m[35m (52.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2016-10-14 12:30:21', '2016-10-14 12:30:21')[0m
+  [1m[35m (50.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT RELEASE_LOCK('5991616491606534915')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW CREATE TABLE `categories`[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'categories'[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW CREATE TABLE `images`[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'images'[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW CREATE TABLE `products`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'products'[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'pg_development'
+  AND fk.table_name = 'categories'
+[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'pg_development'
+  AND fk.table_name = 'images'
+[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'pg_development'
+  AND fk.table_name = 'products'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (980.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS `pg_test`[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE DATABASE `pg_test` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (366.4ms)[0m  [1m[35mCREATE TABLE `categories` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (486.8ms)[0m  [1m[35mCREATE TABLE `images` (`id` int AUTO_INCREMENT PRIMARY KEY, `link` varchar(255), `product_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_images_on_product_id` USING btree (`product_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (497.9ms)[0m  [1m[35mCREATE TABLE `products` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `description` text, `link` varchar(255), `category_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_products_on_category_id` USING btree (`category_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (970.6ms)[0m  [1m[35mALTER TABLE `images` ADD CONSTRAINT `fk_rails_bd36e75ae4`
+FOREIGN KEY (`product_id`)
+  REFERENCES `products` (`id`)
+[0m
+  [1m[35m (1336.9ms)[0m  [1m[35mALTER TABLE `products` ADD CONSTRAINT `fk_rails_fb915499a4`
+FOREIGN KEY (`category_id`)
+  REFERENCES `categories` (`id`)
+[0m
+  [1m[35m (420.6ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (53.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES ('20161014032302')[0m
+  [1m[35m (54.8ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES ('20161014032216'), ('20161014030050');
+
+[0m
+  [1m[35m (588.4ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2016-10-14 12:36:28', '2016-10-14 12:36:28')[0m
+  [1m[35m (59.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (1074.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS `pg_test`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE `pg_test` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (358.8ms)[0m  [1m[35mCREATE TABLE `categories` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (407.9ms)[0m  [1m[35mCREATE TABLE `images` (`id` int AUTO_INCREMENT PRIMARY KEY, `link` varchar(255), `product_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_images_on_product_id` USING btree (`product_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (486.4ms)[0m  [1m[35mCREATE TABLE `products` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `description` text, `link` varchar(255), `category_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_products_on_category_id` USING btree (`category_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (990.2ms)[0m  [1m[35mALTER TABLE `images` ADD CONSTRAINT `fk_rails_bd36e75ae4`
+FOREIGN KEY (`product_id`)
+  REFERENCES `products` (`id`)
+[0m
+  [1m[35m (860.6ms)[0m  [1m[35mALTER TABLE `products` ADD CONSTRAINT `fk_rails_fb915499a4`
+FOREIGN KEY (`category_id`)
+  REFERENCES `categories` (`id`)
+[0m
+  [1m[35m (354.0ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (53.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES ('20161014032302')[0m
+  [1m[35m (55.0ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES ('20161014032216'), ('20161014030050');
+
+[0m
+  [1m[35m (510.3ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2016-10-14 12:38:43', '2016-10-14 12:38:43')[0m
+  [1m[35m (56.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (1144.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS `pg_development`[0m
+  [1m[35m (956.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS `pg_test`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE DATABASE `pg_development` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE DATABASE `pg_test` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (403.2ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (386.2ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT GET_LOCK('5991616491606534915', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateCategories (20161014030050)
+  [1m[35m (423.2ms)[0m  [1m[35mCREATE TABLE `categories` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20161014030050')[0m
+  [1m[35m (50.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateProducts (20161014032216)
+  [1m[35m (397.7ms)[0m  [1m[35mCREATE TABLE `products` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `description` text, `link` varchar(255), `category_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_products_on_category_id`  (`category_id`), CONSTRAINT `fk_rails_fb915499a4`
+FOREIGN KEY (`category_id`)
+  REFERENCES `categories` (`id`)
+) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20161014032216')[0m
+  [1m[35m (85.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateImages (20161014032302)
+  [1m[35m (477.7ms)[0m  [1m[35mCREATE TABLE `images` (`id` int AUTO_INCREMENT PRIMARY KEY, `link` varchar(255), `product_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_images_on_product_id`  (`product_id`)) ENGINE=InnoDB[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20161014032302')[0m
+  [1m[35m (51.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2016-10-14 12:46:56', '2016-10-14 12:46:56')[0m
+  [1m[35m (50.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('5991616491606534915')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW CREATE TABLE `categories`[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'categories'[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW CREATE TABLE `images`[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'images'[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW CREATE TABLE `products`[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'products'[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'pg_development'
+  AND fk.table_name = 'categories'
+[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'pg_development'
+  AND fk.table_name = 'images'
+[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'pg_development'
+  AND fk.table_name = 'products'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS `pg_test`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `pg_test` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (373.1ms)[0m  [1m[35mCREATE TABLE `categories` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (464.1ms)[0m  [1m[35mCREATE TABLE `images` (`id` int AUTO_INCREMENT PRIMARY KEY, `link` varchar(255), `product_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_images_on_product_id` USING btree (`product_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (409.3ms)[0m  [1m[35mCREATE TABLE `products` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `description` text, `link` varchar(255), `category_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_products_on_category_id` USING btree (`category_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8[0m
+  [1m[35m (890.3ms)[0m  [1m[35mALTER TABLE `products` ADD CONSTRAINT `fk_rails_fb915499a4`
+FOREIGN KEY (`category_id`)
+  REFERENCES `categories` (`id`)
+[0m
+  [1m[35m (400.2ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (53.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES ('20161014032302')[0m
+  [1m[35m (55.2ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES ('20161014032216'), ('20161014030050');
+
+[0m
+  [1m[35m (499.3ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2016-10-14 12:47:19', '2016-10-14 12:47:19')[0m
+  [1m[35m (58.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
