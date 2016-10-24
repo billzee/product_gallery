@@ -10,10 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161014234347) do
+ActiveRecord::Schema.define(version: 20161024004834) do
 
   create_table "admins", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string   "username",               default: "", null: false
+    t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
@@ -25,14 +25,16 @@ ActiveRecord::Schema.define(version: 20161014234347) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.index ["email"], name: "index_admins_on_email", unique: true, using: :btree
     t.index ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true, using: :btree
-    t.index ["username"], name: "index_admins_on_username", unique: true, using: :btree
   end
 
   create_table "categories", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "admin_id"
+    t.index ["admin_id"], name: "index_categories_on_admin_id", using: :btree
   end
 
   create_table "images", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -50,8 +52,12 @@ ActiveRecord::Schema.define(version: 20161014234347) do
     t.integer  "category_id"
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
+    t.integer  "admin_id"
+    t.index ["admin_id"], name: "index_products_on_admin_id", using: :btree
     t.index ["category_id"], name: "index_products_on_category_id", using: :btree
   end
 
+  add_foreign_key "categories", "admins"
+  add_foreign_key "products", "admins"
   add_foreign_key "products", "categories"
 end
