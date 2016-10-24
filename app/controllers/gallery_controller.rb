@@ -1,5 +1,6 @@
 class GalleryController < ApplicationController
   def index
-    render :index
+    @products = Product.order :name
+    render template: "products/index"
   end
 end
