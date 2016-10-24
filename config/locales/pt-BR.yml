@@ -1,0 +1,15 @@
+pt-BR:
+  activerecord:
+    attributes:
+      product:
+        name: "Nome"
+        description: "Descrição"
+        link: "Link"
+        category_id: "Categoria"
+        category: "Categoria"
+    errors:
+      models:
+        customer:
+          attributes:
+            phone:
+              improbable_phone: "deve ter um número válido"

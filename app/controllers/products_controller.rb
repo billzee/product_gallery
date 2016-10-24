@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
   before_action :authenticate_admin!
-  
+
   def index
     @products = Product.order :name
     respond_to do |format|
@@ -10,8 +10,8 @@ class ProductsController < ApplicationController
   end
 
   def create
-    @brand = Product.new(product_params)
-    if @brand.save
+    @product = Product.new(product_params)
+    if @product.save
       redirect_to products_path
       flash[:notice] = "Novo Produto registrado"
     else
@@ -20,33 +20,33 @@ class ProductsController < ApplicationController
   end
 
   def new
-    @brand = Product.new
+    @product = Product.new
     render "new"
   end
 
   def edit
-    @brand = Product.find(params[:id])
+    @product = Product.find(params[:id])
     render "edit"
   end
 
   def update
-    @brand = Product.find(params[:id])
-    if @brand.update(product_params)
+    @product = Product.find(params[:id])
+    if @product.update(product_params)
       redirect_to products_path
-      flash[:notice] = "Produto alterada"
+      flash[:notice] = "Produto alterado"
     else
       render "edit"
     end
   end
 
   def destroy
-    @brand = Product.find params[:id]
-    @brand.destroy
+    @product = Product.find params[:id]
+    @product.destroy
   end
 
   private
 
   def product_params
-    params.require(:brand).permit(:name)
+    params.require(:product).permit(:name, :description, :link, :category_id)
   end
 end
