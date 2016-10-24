@@ -23,19 +23,28 @@
           </button>
           <%= link_to('Product Gallery', '/', class: 'navbar-brand') %>
         </div>
+        <div class="collapse navbar-collapse pull-left">
+          <ul class="nav navbar-nav">
+            <% Category.all.each do |category| %>
+            <li>
+              <a href=""><%= category.name %></a>
+            </li>
+            <% end %>
+          </ul>
+        </div>
         <div class="collapse navbar-collapse pull-right">
           <ul class="nav navbar-nav">
             <% if admin_signed_in? %>
-            <li>
-              <%= link_to('Novo Produto', new_product_path) %>
-            </li>
-            <li>
-              <%= link_to('Logout', destroy_admin_session_path, :method => :delete) %>
-            </li>
+              <li>
+                <%= link_to('Novo Produto', new_product_path) %>
+              </li>
+              <li>
+                <%= link_to('Logout', destroy_admin_session_path, :method => :delete) %>
+              </li>
             <% else %>
-            <li>
-              <%= link_to 'Login', new_admin_session_path %>
-            </li>
+              <li>
+                <%= link_to 'Login', new_admin_session_path %>
+              </li>
             <% end %>
           </ul>
         </div>

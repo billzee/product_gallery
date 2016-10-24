@@ -18,6 +18,8 @@ gem 'coffee-rails', '~> 4.2'
 
 gem 'devise'
 
+gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
+
 gem 'rails-i18n', '~> 5.0.0' # For 5.0.x
 
 gem "font-awesome-rails"
