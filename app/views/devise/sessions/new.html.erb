@@ -5,6 +5,16 @@
   </div>
 </div>
 
+<% if flash.any? %>
+  <div class="alert alert-danger alert-dismissable">
+    <% flash.each do |key, value| %>
+      <p>
+        <i class="fa fa-warning"></i>  <%= value %>
+      </p>
+    <% end %>
+  </div>
+<% end %>
+
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 <div class="row">
   <div class="col-xs-6 col-xs-offset-3">

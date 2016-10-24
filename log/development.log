@@ -8608,3 +8608,967 @@ Processing by GalleryController#index as HTML
 Completed 200 OK in 35ms (Views: 34.1ms | ActiveRecord: 0.1ms)
 
 
+Started GET "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:30:24 -0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 64ms (Views: 61.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:30:25 -0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"a8BCxKzUPREUKWGo0sIo2HZAR8z5dBimYgkxJiNUs2XwCe0dFwNX9VZhaWe9UeGTKIvuusS5aWER8Gl8tty9Aw==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"a8BCxKzUPREUKWGo0sIo2HZAR8z5dBimYgkxJiNUs2XwCe0dFwNX9VZhaWe9UeGTKIvuusS5aWER8Gl8tty9Aw==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 65ms (Views: 62.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:30:29 -0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 48ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:31:23 -0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 53ms (Views: 51.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:31:26 -0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ffTLkDP6MDU+EgsjsVHoS4Gb4ClHCkBLSGLmVAjXCEHGjs1fpu8tRgWS+OOQ2Y2rMeF6V5QHfxoXYFpKKa207g==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ffTLkDP6MDU+EgsjsVHoS4Gb4ClHCkBLSGLmVAjXCEHGjs1fpu8tRgWS+OOQ2Y2rMeF6V5QHfxoXYFpKKa207g==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 41ms (Views: 39.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:31:59 -0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 37ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:32:00 -0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/Bx4aD4kGRjm8BgrNQFNwEbH86oSVBioLY2HGaYw/PRHZn6nqzEEa91w6+sUiSgg9r1p1MFZJ/lyjzsHh0pAWw==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/Bx4aD4kGRjm8BgrNQFNwEbH86oSVBioLY2HGaYw/PRHZn6nqzEEa91w6+sUiSgg9r1p1MFZJ/lyjzsHh0pAWw==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 42ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:32:00 -0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VoAsmtqQSphDarNCC01Cimti7smj6JMEgbT3UIQf2yDt+ipVT4VX63jqQIIqxSdq2xh0t3DlrFXetktOpWVnjw==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VoAsmtqQSphDarNCC01Cimti7smj6JMEgbT3UIQf2yDt+ipVT4VX63jqQIIqxSdq2xh0t3DlrFXetktOpWVnjw==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 49ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:32:05 -0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 49ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:32:06 -0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+Xs3Tx4TKGb+9HKaB/S/d2V0jMjg0/ow1414ZA5wqkhCATGAiwY1FcV0gVomfNqX1Q4WtjPexWGIj8R6LwoW5w==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+Xs3Tx4TKGb+9HKaB/S/d2V0jMjg0/ow1414ZA5wqkhCATGAiwY1FcV0gVomfNqX1Q4WtjPexWGIj8R6LwoW5w==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 38ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:32:07 -0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"roqCndqYmW8YrTOcLOTI3dRu3jOonevt7cpzKuhukiYV8IRST42EHCMtwFwNbK09ZBRETXuQ1LyyyM80yRQuiQ==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"roqCndqYmW8YrTOcLOTI3dRu3jOonevt7cpzKuhukiYV8IRST42EHCMtwFwNbK09ZBRETXuQ1LyyyM80yRQuiQ==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 36ms (Views: 35.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:32:30 -0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 32ms (Views: 31.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:32:32 -0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vkdWxaOApfvPr59GBJIgN97Sj21l6ruaTx+GiFPIBDUFPVAKNpW4iPQvbIYlGkXXbqgVE7bnhMsQHTqWcrK4mg==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vkdWxaOApfvPr59GBJIgN97Sj21l6ruaTx+GiFPIBDUFPVAKNpW4iPQvbIYlGkXXbqgVE7bnhMsQHTqWcrK4mg==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 40ms (Views: 39.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:32:32 -0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KJ2cU9TgintzX2BEV3wMrKEAoFYA4tnVddLnefGAKF+T55qcQfWXCEjfk4R29GlMEXo6KNPv5oQq0Ftn0PqU8A==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KJ2cU9TgintzX2BEV3wMrKEAoFYA4tnVddLnefGAKF+T55qcQfWXCEjfk4R29GlMEXo6KNPv5oQq0Ftn0PqU8A==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 51ms (Views: 49.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:33:01 -0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:33:03 -0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J3j+dn7hZL5nmpMT5Gq5WO2qTPgzCmphVQ+Irp6njsCcAvi56/R5zVwaYNPF4ty4XdDWhuAHVTAKDTSwv90ybw==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J3j+dn7hZL5nmpMT5Gq5WO2qTPgzCmphVQ+Irp6njsCcAvi56/R5zVwaYNPF4ty4XdDWhuAHVTAKDTSwv90ybw==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 46ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:33:10 -0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:33:11 -0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kTyKWuP4e5KNGen6nMRQKx7uUBK8jTVS91ohhPJfIXUqRoyVdu1m4baZGjq9TDXLrpTKbG+ACgOoWJ2a0yWd2g==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kTyKWuP4e5KNGen6nMRQKx7uUBK8jTVS91ohhPJfIXUqRoyVdu1m4baZGjq9TDXLrpTKbG+ACgOoWJ2a0yWd2g==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 38ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:33:12 -0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uXjA6myQlL2vycaz3lLg2nSiW3K/tmPaWwDlE5tf17ACAsYl+YWJzpRJNXP/2oU6xNjBDGy7XIsEAlkNuiVrHw==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uXjA6myQlL2vycaz3lLg2nSiW3K/tmPaWwDlE5tf17ACAsYl+YWJzpRJNXP/2oU6xNjBDGy7XIsEAlkNuiVrHw==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 52ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:33:19 -0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 32ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:33:20 -0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"29pPUnBrJJw8XryN+0V42ylqPb/1hyZ31rz1ESLvUr9goEmd5X457wfeT03azR07mRCnwSaKGSaJvkkPA5XuEA==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"29pPUnBrJJw8XryN+0V42ylqPb/1hyZ31rz1ESLvUr9goEmd5X457wfeT03azR07mRCnwSaKGSaJvkkPA5XuEA==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:33:59 -0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:34:00 -0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8u//Vt0sYwBexf8s/A8GYckY0fOmTzC4+7B0AceDiG5JlfmZSDl+c2VFDOzdh2OBeWJLjXVCD+mkssgf5vk0wQ==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8u//Vt0sYwBexf8s/A8GYckY0fOmTzC4+7B0AceDiG5JlfmZSDl+c2VFDOzdh2OBeWJLjXVCD+mkssgf5vk0wQ==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 37ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:34:02 -0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l+wE9u19V8G2DO7wwXNzZQXtjk3klkSdHEn5M7FO5vwslgI5eGhKso2MHTDg+xaFtZcUMzebe8xDS0UtkDRaUw==", "admin"=>{"email"=>"dsadsa", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  [1m[36mAdmin Load (0.4ms)[0m  [1m[34mSELECT  `admins`.* FROM `admins` WHERE `admins`.`email` = 'dsadsa' ORDER BY `admins`.`id` ASC LIMIT 1[0m
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.4ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l+wE9u19V8G2DO7wwXNzZQXtjk3klkSdHEn5M7FO5vwslgI5eGhKso2MHTDg+xaFtZcUMzebe8xDS0UtkDRaUw==", "admin"=>{"email"=>"dsadsa", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 204ms (Views: 42.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:34:17 -0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 36ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:34:18 -0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/FojAr/Z3pPx2guB8taL9/h5Y+JawEBTqqi7zFH2uYZHICXNKszD4Mpa+EHTXu4XSAP5nInNfwL1qgfScIwFKQ==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/FojAr/Z3pPx2guB8taL9/h5Y+JawEBTqqi7zFH2uYZHICXNKszD4Mpa+EHTXu4XSAP5nInNfwL1qgfScIwFKQ==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:35:19 -0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 32ms (Views: 31.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:35:20 -0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9P7grf3xqRosU6roXD5VSTsqkgV8y80h+XDU0KtmmFNPhOZiaOS0aRfTWSh9tjCpi1AIe6/G8nCmcmjOihwk/A==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9P7grf3xqRosU6roXD5VSTsqkgV8y80h+XDU0KtmmFNPhOZiaOS0aRfTWSh9tjCpi1AIe6/G8nCmcmjOihwk/A==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:36:16 -0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (56.0ms)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_error_messages' for #<#<Class:0x007f7990173cf0>:0x007f7990081c98>):
+     5:   </div>
+     6: </div>
+     7: 
+     8: <% if devise_error_messages.any? %>
+     9:   <div class="alert alert-danger alert-dismissable">
+    10:     <% flash.each do |key, value| %>
+    11:       <p>
+  
+app/views/devise/sessions/new.html.erb:8:in `_app_views_devise_sessions_new_html_erb___975838506533833499_70080042110940'
+  Rendering /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (17.0ms)
+  Rendering /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendering /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (38.3ms)
+Started GET "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:36:28 -0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (62.2ms)
+Completed 500 Internal Server Error in 66ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_error_messages' for #<#<Class:0x007f7990173cf0>:0x007f7985db3a48>):
+     5:   </div>
+     6: </div>
+     7: 
+     8: <% if devise_error_messages %>
+     9:   <div class="alert alert-danger alert-dismissable">
+    10:     <% flash.each do |key, value| %>
+    11:       <p>
+  
+app/views/devise/sessions/new.html.erb:8:in `_app_views_devise_sessions_new_html_erb___975838506533833499_70079956751140'
+  Rendering /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.2ms)
+  Rendering /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (30.3ms)
+Started GET "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:36:35 -0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 31ms (Views: 29.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:36:36 -0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"44JjriT/xLl+jjhB7UKBWhqO4HDwG/R3MU2ZflTLydZY+GVhserZykUOy4HMyuS6qvR6DiMWyyZuTyVgdbF1eQ==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"44JjriT/xLl+jjhB7UKBWhqO4HDwG/R3MU2ZflTLydZY+GVhserZykUOy4HMyuS6qvR6DiMWyyZuTyVgdbF1eQ==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:37:38 -0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 48ms (Views: 39.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:37:39 -0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NsyaszMY7VEUYU0bbEQkyS1UPqXWme2Y1+0NkmjR98yNtpx8pg3wIi/hvttNzEEpnS6k2wWU0smI77GMSatLYw==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+I18n::InvalidLocaleData (can not load translations from /home/guilherme/projects/product_gallery/config/locales/pt-BR.yml: #<Psych::SyntaxError: (/home/guilherme/projects/product_gallery/config/locales/pt-BR.yml): found character that cannot start any token while scanning for the next token at line 73 column 2>):
+  
+i18n (0.7.0) lib/i18n/backend/base.rb:184:in `rescue in load_yml'
+i18n (0.7.0) lib/i18n/backend/base.rb:181:in `load_yml'
+i18n (0.7.0) lib/i18n/backend/base.rb:165:in `load_file'
+i18n (0.7.0) lib/i18n/backend/base.rb:15:in `block in load_translations'
+i18n (0.7.0) lib/i18n/backend/base.rb:15:in `each'
+i18n (0.7.0) lib/i18n/backend/base.rb:15:in `load_translations'
+i18n (0.7.0) lib/i18n/backend/simple.rb:57:in `init_translations'
+i18n (0.7.0) lib/i18n/backend/simple.rb:71:in `lookup'
+i18n (0.7.0) lib/i18n/backend/base.rb:26:in `translate'
+i18n (0.7.0) lib/i18n.rb:158:in `block in translate'
+i18n (0.7.0) lib/i18n.rb:154:in `catch'
+i18n (0.7.0) lib/i18n.rb:154:in `translate'
+activemodel (5.0.0.1) lib/active_model/translation.rb:66:in `human_attribute_name'
+devise (4.2.0) lib/devise/failure_app.rb:104:in `block in i18n_message'
+devise (4.2.0) lib/devise/failure_app.rb:104:in `map'
+devise (4.2.0) lib/devise/failure_app.rb:104:in `i18n_message'
+devise (4.2.0) lib/devise/failure_app.rb:71:in `recall'
+devise (4.2.0) lib/devise/failure_app.rb:39:in `respond'
+actionpack (5.0.0.1) lib/abstract_controller/base.rb:188:in `process_action'
+actionpack (5.0.0.1) lib/abstract_controller/base.rb:126:in `process'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:251:in `block in action'
+devise (4.2.0) lib/devise/failure_app.rb:21:in `call'
+devise (4.2.0) lib/devise/failure_app.rb:21:in `call'
+devise (4.2.0) lib/devise/delegator.rb:5:in `call'
+warden (1.2.6) lib/warden/manager.rb:142:in `call_failure_app'
+warden (1.2.6) lib/warden/manager.rb:128:in `process_unauthenticated'
+warden (1.2.6) lib/warden/manager.rb:43:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.0.1) lib/active_record/migration.rb:552:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.5ms)
+
+ActionView::Template::Error: can not load translations from /home/guilherme/projects/product_gallery/config/locales/pt-BR.yml: #<Psych::SyntaxError: (/home/guilherme/projects/product_gallery/config/locales/pt-BR.yml): found character that cannot start any token while scanning for the next token at line 73 column 2>
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/i18n-0.7.0/lib/i18n/backend/base.rb:184:in `rescue in load_yml'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/i18n-0.7.0/lib/i18n/backend/base.rb:181:in `load_yml'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/i18n-0.7.0/lib/i18n/backend/base.rb:165:in `load_file'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/i18n-0.7.0/lib/i18n/backend/base.rb:15:in `block in load_translations'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/i18n-0.7.0/lib/i18n/backend/base.rb:15:in `each'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/i18n-0.7.0/lib/i18n/backend/base.rb:15:in `load_translations'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/i18n-0.7.0/lib/i18n/backend/simple.rb:57:in `init_translations'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/i18n-0.7.0/lib/i18n/backend/simple.rb:71:in `lookup'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/i18n-0.7.0/lib/i18n/backend/base.rb:26:in `translate'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/i18n-0.7.0/lib/i18n.rb:158:in `block in translate'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/i18n-0.7.0/lib/i18n.rb:154:in `catch'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/i18n-0.7.0/lib/i18n.rb:154:in `translate'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/helpers/translation_helper.rb:90:in `translate'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/web-console-3.3.1/lib/web_console/view.rb:43:in `t'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/web-console-3.3.1/lib/web_console/templates/console.js.erb:95:in `__home_guilherme__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb___1867035137963635545_70080013687520'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/template.rb:158:in `block in render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/notifications.rb:166:in `instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/template.rb:348:in `instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/template.rb:156:in `render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/abstract_renderer.rb:42:in `block in instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/notifications.rb:164:in `block in instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/notifications.rb:164:in `instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/abstract_renderer.rb:41:in `instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/template_renderer.rb:14:in `render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/renderer.rb:42:in `render_template'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/renderer.rb:23:in `render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/helpers/rendering_helper.rb:32:in `render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/web-console-3.3.1/lib/web_console/view.rb:34:in `block in render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/logger_silence.rb:20:in `silence'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/logger_silence.rb:20:in `silence'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/web-console-3.3.1/lib/web_console/view.rb:34:in `render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/web-console-3.3.1/lib/web_console/view.rb:18:in `render_javascript'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/web-console-3.3.1/lib/web_console/templates/index.html.erb:3:in `__home_guilherme__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_index_html_erb___853357155245156936_70080008425940'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/template.rb:158:in `block in render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/notifications.rb:166:in `instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/template.rb:348:in `instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/template.rb:156:in `render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/abstract_renderer.rb:42:in `block in instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/notifications.rb:164:in `block in instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/notifications.rb:164:in `instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/abstract_renderer.rb:41:in `instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/template_renderer.rb:14:in `render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/renderer.rb:42:in `render_template'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/renderer.rb:23:in `render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/helpers/rendering_helper.rb:32:in `render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/web-console-3.3.1/lib/web_console/view.rb:34:in `block in render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/logger_silence.rb:20:in `silence'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/logger_silence.rb:20:in `silence'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/web-console-3.3.1/lib/web_console/view.rb:34:in `render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/web-console-3.3.1/lib/web_console/template.rb:20:in `render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/web-console-3.3.1/lib/web_console/middleware.rb:36:in `block in call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `catch'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/railties-5.0.0.1/lib/rails/rack/logger.rb:36:in `call_app'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/railties-5.0.0.1/lib/rails/rack/logger.rb:24:in `block in call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/tagged_logging.rb:70:in `tagged'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/railties-5.0.0.1/lib/rails/rack/logger.rb:24:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/sprockets-rails-3.2.0/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/rack-2.0.1/lib/rack/method_override.rb:22:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/rack-2.0.1/lib/rack/runtime.rb:22:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/executor.rb:12:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/static.rb:136:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/rack-2.0.1/lib/rack/sendfile.rb:111:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/railties-5.0.0.1/lib/rails/engine.rb:522:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/puma-3.6.0/lib/puma/configuration.rb:225:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/puma-3.6.0/lib/puma/server.rb:578:in `handle_request'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/puma-3.6.0/lib/puma/server.rb:415:in `process_client'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/puma-3.6.0/lib/puma/server.rb:275:in `block in run'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started POST "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:37:43 -0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NsyaszMY7VEUYU0bbEQkyS1UPqXWme2Y1+0NkmjR98yNtpx8pg3wIi/hvttNzEEpnS6k2wWU0smI77GMSatLYw==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+I18n::InvalidLocaleData (can not load translations from /home/guilherme/projects/product_gallery/config/locales/pt-BR.yml: #<Psych::SyntaxError: (/home/guilherme/projects/product_gallery/config/locales/pt-BR.yml): found character that cannot start any token while scanning for the next token at line 73 column 2>):
+  
+i18n (0.7.0) lib/i18n/backend/base.rb:184:in `rescue in load_yml'
+i18n (0.7.0) lib/i18n/backend/base.rb:181:in `load_yml'
+i18n (0.7.0) lib/i18n/backend/base.rb:165:in `load_file'
+i18n (0.7.0) lib/i18n/backend/base.rb:15:in `block in load_translations'
+i18n (0.7.0) lib/i18n/backend/base.rb:15:in `each'
+i18n (0.7.0) lib/i18n/backend/base.rb:15:in `load_translations'
+i18n (0.7.0) lib/i18n/backend/simple.rb:57:in `init_translations'
+i18n (0.7.0) lib/i18n/backend/simple.rb:71:in `lookup'
+i18n (0.7.0) lib/i18n/backend/base.rb:26:in `translate'
+i18n (0.7.0) lib/i18n.rb:158:in `block in translate'
+i18n (0.7.0) lib/i18n.rb:154:in `catch'
+i18n (0.7.0) lib/i18n.rb:154:in `translate'
+activemodel (5.0.0.1) lib/active_model/translation.rb:66:in `human_attribute_name'
+devise (4.2.0) lib/devise/failure_app.rb:104:in `block in i18n_message'
+devise (4.2.0) lib/devise/failure_app.rb:104:in `map'
+devise (4.2.0) lib/devise/failure_app.rb:104:in `i18n_message'
+devise (4.2.0) lib/devise/failure_app.rb:71:in `recall'
+devise (4.2.0) lib/devise/failure_app.rb:39:in `respond'
+actionpack (5.0.0.1) lib/abstract_controller/base.rb:188:in `process_action'
+actionpack (5.0.0.1) lib/abstract_controller/base.rb:126:in `process'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:251:in `block in action'
+devise (4.2.0) lib/devise/failure_app.rb:21:in `call'
+devise (4.2.0) lib/devise/failure_app.rb:21:in `call'
+devise (4.2.0) lib/devise/delegator.rb:5:in `call'
+warden (1.2.6) lib/warden/manager.rb:142:in `call_failure_app'
+warden (1.2.6) lib/warden/manager.rb:128:in `process_unauthenticated'
+warden (1.2.6) lib/warden/manager.rb:43:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.0.1) lib/active_record/migration.rb:552:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.4ms)
+
+ActionView::Template::Error: can not load translations from /home/guilherme/projects/product_gallery/config/locales/pt-BR.yml: #<Psych::SyntaxError: (/home/guilherme/projects/product_gallery/config/locales/pt-BR.yml): found character that cannot start any token while scanning for the next token at line 73 column 2>
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/i18n-0.7.0/lib/i18n/backend/base.rb:184:in `rescue in load_yml'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/i18n-0.7.0/lib/i18n/backend/base.rb:181:in `load_yml'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/i18n-0.7.0/lib/i18n/backend/base.rb:165:in `load_file'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/i18n-0.7.0/lib/i18n/backend/base.rb:15:in `block in load_translations'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/i18n-0.7.0/lib/i18n/backend/base.rb:15:in `each'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/i18n-0.7.0/lib/i18n/backend/base.rb:15:in `load_translations'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/i18n-0.7.0/lib/i18n/backend/simple.rb:57:in `init_translations'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/i18n-0.7.0/lib/i18n/backend/simple.rb:71:in `lookup'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/i18n-0.7.0/lib/i18n/backend/base.rb:26:in `translate'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/i18n-0.7.0/lib/i18n.rb:158:in `block in translate'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/i18n-0.7.0/lib/i18n.rb:154:in `catch'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/i18n-0.7.0/lib/i18n.rb:154:in `translate'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/helpers/translation_helper.rb:90:in `translate'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/web-console-3.3.1/lib/web_console/view.rb:43:in `t'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/web-console-3.3.1/lib/web_console/templates/console.js.erb:95:in `__home_guilherme__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb___1867035137963635545_70079979853700'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/template.rb:158:in `block in render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/notifications.rb:166:in `instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/template.rb:348:in `instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/template.rb:156:in `render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/abstract_renderer.rb:42:in `block in instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/notifications.rb:164:in `block in instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/notifications.rb:164:in `instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/abstract_renderer.rb:41:in `instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/template_renderer.rb:14:in `render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/renderer.rb:42:in `render_template'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/renderer.rb:23:in `render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/helpers/rendering_helper.rb:32:in `render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/web-console-3.3.1/lib/web_console/view.rb:34:in `block in render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/logger_silence.rb:20:in `silence'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/logger_silence.rb:20:in `silence'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/web-console-3.3.1/lib/web_console/view.rb:34:in `render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/web-console-3.3.1/lib/web_console/view.rb:18:in `render_javascript'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/web-console-3.3.1/lib/web_console/templates/index.html.erb:3:in `__home_guilherme__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_index_html_erb___853357155245156936_70079956268200'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/template.rb:158:in `block in render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/notifications.rb:166:in `instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/template.rb:348:in `instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/template.rb:156:in `render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/abstract_renderer.rb:42:in `block in instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/notifications.rb:164:in `block in instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/notifications.rb:164:in `instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/abstract_renderer.rb:41:in `instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/template_renderer.rb:14:in `render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/renderer.rb:42:in `render_template'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/renderer.rb:23:in `render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/helpers/rendering_helper.rb:32:in `render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/web-console-3.3.1/lib/web_console/view.rb:34:in `block in render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/logger_silence.rb:20:in `silence'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/logger_silence.rb:20:in `silence'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/web-console-3.3.1/lib/web_console/view.rb:34:in `render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/web-console-3.3.1/lib/web_console/template.rb:20:in `render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/web-console-3.3.1/lib/web_console/middleware.rb:36:in `block in call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `catch'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/railties-5.0.0.1/lib/rails/rack/logger.rb:36:in `call_app'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/railties-5.0.0.1/lib/rails/rack/logger.rb:24:in `block in call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/tagged_logging.rb:70:in `tagged'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/railties-5.0.0.1/lib/rails/rack/logger.rb:24:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/sprockets-rails-3.2.0/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/rack-2.0.1/lib/rack/method_override.rb:22:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/rack-2.0.1/lib/rack/runtime.rb:22:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/executor.rb:12:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/static.rb:136:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/rack-2.0.1/lib/rack/sendfile.rb:111:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/railties-5.0.0.1/lib/rails/engine.rb:522:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/puma-3.6.0/lib/puma/configuration.rb:225:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/puma-3.6.0/lib/puma/server.rb:578:in `handle_request'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/puma-3.6.0/lib/puma/server.rb:415:in `process_client'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/puma-3.6.0/lib/puma/server.rb:275:in `block in run'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:38:11 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 450ms (Views: 425.0ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:38:13 -0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mo39AZ51IOkYNOinkspZCiUukRC6SrlmFTfwxnJPFM0h9/vOC2A9miO0G2ezQjzqlVQLbmlHhjdKNUzYUzWoYg==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+I18n::InvalidLocaleData (can not load translations from /home/guilherme/projects/product_gallery/config/locales/pt-BR.yml: #<Psych::SyntaxError: (/home/guilherme/projects/product_gallery/config/locales/pt-BR.yml): found character that cannot start any token while scanning for the next token at line 73 column 2>):
+  
+i18n (0.7.0) lib/i18n/backend/base.rb:184:in `rescue in load_yml'
+i18n (0.7.0) lib/i18n/backend/base.rb:181:in `load_yml'
+i18n (0.7.0) lib/i18n/backend/base.rb:165:in `load_file'
+i18n (0.7.0) lib/i18n/backend/base.rb:15:in `block in load_translations'
+i18n (0.7.0) lib/i18n/backend/base.rb:15:in `each'
+i18n (0.7.0) lib/i18n/backend/base.rb:15:in `load_translations'
+i18n (0.7.0) lib/i18n/backend/simple.rb:57:in `init_translations'
+i18n (0.7.0) lib/i18n/backend/simple.rb:71:in `lookup'
+i18n (0.7.0) lib/i18n/backend/base.rb:26:in `translate'
+i18n (0.7.0) lib/i18n.rb:158:in `block in translate'
+i18n (0.7.0) lib/i18n.rb:154:in `catch'
+i18n (0.7.0) lib/i18n.rb:154:in `translate'
+activemodel (5.0.0.1) lib/active_model/translation.rb:66:in `human_attribute_name'
+devise (4.2.0) lib/devise/failure_app.rb:104:in `block in i18n_message'
+devise (4.2.0) lib/devise/failure_app.rb:104:in `map'
+devise (4.2.0) lib/devise/failure_app.rb:104:in `i18n_message'
+devise (4.2.0) lib/devise/failure_app.rb:71:in `recall'
+devise (4.2.0) lib/devise/failure_app.rb:39:in `respond'
+actionpack (5.0.0.1) lib/abstract_controller/base.rb:188:in `process_action'
+actionpack (5.0.0.1) lib/abstract_controller/base.rb:126:in `process'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:251:in `block in action'
+devise (4.2.0) lib/devise/failure_app.rb:21:in `call'
+devise (4.2.0) lib/devise/failure_app.rb:21:in `call'
+devise (4.2.0) lib/devise/delegator.rb:5:in `call'
+warden (1.2.6) lib/warden/manager.rb:142:in `call_failure_app'
+warden (1.2.6) lib/warden/manager.rb:128:in `process_unauthenticated'
+warden (1.2.6) lib/warden/manager.rb:43:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.0.1) lib/active_record/migration.rb:552:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.1ms)
+  Rendering /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.9ms)
+
+ActionView::Template::Error: can not load translations from /home/guilherme/projects/product_gallery/config/locales/pt-BR.yml: #<Psych::SyntaxError: (/home/guilherme/projects/product_gallery/config/locales/pt-BR.yml): found character that cannot start any token while scanning for the next token at line 73 column 2>
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/i18n-0.7.0/lib/i18n/backend/base.rb:184:in `rescue in load_yml'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/i18n-0.7.0/lib/i18n/backend/base.rb:181:in `load_yml'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/i18n-0.7.0/lib/i18n/backend/base.rb:165:in `load_file'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/i18n-0.7.0/lib/i18n/backend/base.rb:15:in `block in load_translations'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/i18n-0.7.0/lib/i18n/backend/base.rb:15:in `each'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/i18n-0.7.0/lib/i18n/backend/base.rb:15:in `load_translations'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/i18n-0.7.0/lib/i18n/backend/simple.rb:57:in `init_translations'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/i18n-0.7.0/lib/i18n/backend/simple.rb:71:in `lookup'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/i18n-0.7.0/lib/i18n/backend/base.rb:26:in `translate'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/i18n-0.7.0/lib/i18n.rb:158:in `block in translate'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/i18n-0.7.0/lib/i18n.rb:154:in `catch'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/i18n-0.7.0/lib/i18n.rb:154:in `translate'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/helpers/translation_helper.rb:90:in `translate'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/web-console-3.3.1/lib/web_console/view.rb:43:in `t'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/web-console-3.3.1/lib/web_console/templates/console.js.erb:95:in `__home_guilherme__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb__2821787803807125640_70098366496700'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/template.rb:158:in `block in render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/notifications.rb:166:in `instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/template.rb:348:in `instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/template.rb:156:in `render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/abstract_renderer.rb:42:in `block in instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/notifications.rb:164:in `block in instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/notifications.rb:164:in `instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/abstract_renderer.rb:41:in `instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/template_renderer.rb:14:in `render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/renderer.rb:42:in `render_template'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/renderer.rb:23:in `render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/helpers/rendering_helper.rb:32:in `render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/web-console-3.3.1/lib/web_console/view.rb:34:in `block in render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/logger_silence.rb:20:in `silence'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/logger_silence.rb:20:in `silence'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/web-console-3.3.1/lib/web_console/view.rb:34:in `render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/web-console-3.3.1/lib/web_console/view.rb:18:in `render_javascript'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/web-console-3.3.1/lib/web_console/templates/index.html.erb:3:in `__home_guilherme__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_index_html_erb___2193414383574063915_23717980'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/template.rb:158:in `block in render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/notifications.rb:166:in `instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/template.rb:348:in `instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/template.rb:156:in `render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/abstract_renderer.rb:42:in `block in instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/notifications.rb:164:in `block in instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/notifications.rb:164:in `instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/abstract_renderer.rb:41:in `instrument'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/template_renderer.rb:14:in `render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/renderer.rb:42:in `render_template'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/renderer/renderer.rb:23:in `render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionview-5.0.0.1/lib/action_view/helpers/rendering_helper.rb:32:in `render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/web-console-3.3.1/lib/web_console/view.rb:34:in `block in render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/logger_silence.rb:20:in `silence'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/logger_silence.rb:20:in `silence'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/web-console-3.3.1/lib/web_console/view.rb:34:in `render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/web-console-3.3.1/lib/web_console/template.rb:20:in `render'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/web-console-3.3.1/lib/web_console/middleware.rb:36:in `block in call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `catch'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/web-console-3.3.1/lib/web_console/middleware.rb:18:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/railties-5.0.0.1/lib/rails/rack/logger.rb:36:in `call_app'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/railties-5.0.0.1/lib/rails/rack/logger.rb:24:in `block in call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/tagged_logging.rb:70:in `tagged'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/railties-5.0.0.1/lib/rails/rack/logger.rb:24:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/sprockets-rails-3.2.0/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/rack-2.0.1/lib/rack/method_override.rb:22:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/rack-2.0.1/lib/rack/runtime.rb:22:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/activesupport-5.0.0.1/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/executor.rb:12:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/static.rb:136:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/rack-2.0.1/lib/rack/sendfile.rb:111:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/railties-5.0.0.1/lib/rails/engine.rb:522:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/puma-3.6.0/lib/puma/configuration.rb:225:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/puma-3.6.0/lib/puma/server.rb:578:in `handle_request'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/puma-3.6.0/lib/puma/server.rb:415:in `process_client'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/puma-3.6.0/lib/puma/server.rb:275:in `block in run'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `call'
+	from /home/guilherme/.rvm/gems/ruby-2.2.2/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started POST "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:38:45 -0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mo39AZ51IOkYNOinkspZCiUukRC6SrlmFTfwxnJPFM0h9/vOC2A9miO0G2ezQjzqlVQLbmlHhjdKNUzYUzWoYg==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mo39AZ51IOkYNOinkspZCiUukRC6SrlmFTfwxnJPFM0h9/vOC2A9miO0G2ezQjzqlVQLbmlHhjdKNUzYUzWoYg==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 47ms (Views: 34.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:39:27 -0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 35ms (Views: 33.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:39:28 -0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RMYroGiggMFoELMZ36G+jB1CG/KK6hWz8ULe0hWtwyf/vC1v/bWdslOQQNn+KdtsrTiBjFnnKuKuQGLMNNd/iA==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RMYroGiggMFoELMZ36G+jB1CG/KK6hWz8ULe0hWtwyf/vC1v/bWdslOQQNn+KdtsrTiBjFnnKuKuQGLMNNd/iA==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:39:49 -0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admins/sign_in" for 127.0.0.1 at 2016-10-23 23:39:50 -0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9n+EpDGyw/T031HacInDbdsmIXYuqOSi6lwvxfw19WFNBYJrpKfeh89fohpRAaaNa1y7CP2l2/O1XpPb3U9Jzg==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9n+EpDGyw/T031HacInDbdsmIXYuqOSi6lwvxfw19WFNBYJrpKfeh89fohpRAaaNa1y7CP2l2/O1XpPb3U9Jzg==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 49ms (Views: 47.4ms | ActiveRecord: 0.0ms)
+
+
