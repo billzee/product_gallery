@@ -9,7 +9,7 @@ class ProductsController < ApplicationController
     @product = Product.new(product_params)
     if @product.save
       redirect_to products_path
-      flash[:notice] = "Novo Produto registrado"
+      flash[:notice] = "Novo Produto criado"
     else
       render :new
     end
@@ -37,7 +37,13 @@ class ProductsController < ApplicationController
 
   def destroy
     @product = Product.find params[:id]
-    @product.destroy
+    if @product.destroy
+      redirect_to products_path
+      flash[:notice] = "Produto excluído"
+    else
+      redirect_to products_path
+      flash[:notice] = "Erro na exclusão"
+    end
   end
 
   private

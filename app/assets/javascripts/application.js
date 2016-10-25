@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require lightgallery
+//= require sweetalert
 //= require_tree .

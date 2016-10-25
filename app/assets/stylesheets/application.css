@@ -12,6 +12,7 @@
  *
  *= require_tree .
  *= require font-awesome
- *= require lightgallery 
+ *= require lightgallery
+ *= require sweetalert 
  *= require_self
  */
