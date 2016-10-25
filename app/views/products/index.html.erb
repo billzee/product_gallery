@@ -1,14 +1,15 @@
 <% @products.each do |product| %>
   <div class="row">
-    <div class="col-xs-6 bgm-black m-t-20">
-      <div class="row" id="lightgallery">
+    <div class="col-xs-6 m-t-20">
+      <div class="row text-center" id="lightgallery">
         <% product.images.each_with_index do |img, idx| %>
           <% if idx == 0 %>
             <a href="<%= img %>" class="col-xs-12 text-center p-0">
               <%= image_tag img, class: 'thumb-big' %>
+              <hr />
             </a>
           <% else %>
-            <a href="<%= img %>" class="col-xs-2 text-center p-0">
+            <a href="<%= img %>" class="text-center p-0">
               <%= image_tag img, class: 'thumb-small' %>
             </a>
           <% end %>
