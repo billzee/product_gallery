@@ -2,17 +2,46 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+$black: #333;
+
 .m-t-20{
   margin-top: 20px;
+}
+
+.p-0{
+  padding: 0px !important;
+}
+
+.bgm-black{
+  background: $black;
 }
 
 .break-word{
   word-wrap: break-word;
 }
 
+#lightgallery{
+  // background: black;
+}
+
+.thumb-small{
+  height: 120px;
+  border: 3px solid $black;
+}
+
+.thumb-big{
+  max-height: 250px;
+  border: 3px solid $black;
+}
+
+.lg-sub-html {
+  display: none !important;
+}
+
 .custom-file-input::-webkit-file-upload-button {
  visibility: hidden;
 }
+
 .custom-file-input::before {
  content: 'Adicionar';
  display: inline-block;
@@ -28,9 +57,11 @@
  font-weight: 700;
  font-size: 10pt;
 }
+
 .custom-file-input:hover::before {
  border-color: black;
 }
+
 .custom-file-input:active::before {
  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
 }

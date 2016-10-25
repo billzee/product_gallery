@@ -1,17 +1,21 @@
 <% @products.each do |product| %>
   <div class="row">
-    <div class="col-md-6">
-      <div class="row">
-        <% product.images.each do |img| %>
-          <div class="col-md-3 pull-right">
-            <a href="#">
-              <%= image_tag(img, class: 'img-responsive') %>
+    <div class="col-xs-6 bgm-black m-t-20">
+      <div class="row" id="lightgallery">
+        <% product.images.each_with_index do |img, idx| %>
+          <% if idx == 0 %>
+            <a href="<%= img %>" class="col-xs-12 text-center p-0">
+              <%= image_tag img, class: 'thumb-big' %>
             </a>
-          </div>
+          <% else %>
+            <a href="<%= img %>" class="col-xs-2 text-center p-0">
+              <%= image_tag img, class: 'thumb-small' %>
+            </a>
+          <% end %>
         <% end %>
       </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-xs-6">
       <div class="row">
         <div class="col-md-8">
           <h3><%= product.name %></h3>
@@ -27,14 +31,10 @@
           </div>
         <% end %>
       </div>
-
-
-          <p class="break-word">
-            <%= product.description %>
-          </p>
-
-
-      <%= link_to product.link, target: '_blank', class: 'btn btn-primary' do %>
+      <p class="break-word">
+        <%= product.description %>
+      </p>
+      <%= link_to product.link, target: '_blank', class: 'btn btn-success btn-lg' do %>
         Comprar <i class="fa fa-shopping-cart"></i>
       <% end %>
     </div>
@@ -69,3 +69,11 @@
     </ul>
   </div>
 </div>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $("#lightgallery").lightGallery({
+      thumbnail:true
+    });
+  });
+</script>
