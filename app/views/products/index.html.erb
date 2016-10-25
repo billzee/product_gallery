@@ -17,7 +17,7 @@
           <h3><%= product.name %></h3>
         </div>
         <% if admin_signed_in? %>
-          <div class="col-md-4">
+          <div class="col-md-4 text-right">
             <%= link_to product, class: 'btn btn-primary m-t-20' do %>
               <i class="fa fa-edit"></i>
             <% end %>
@@ -28,9 +28,11 @@
         <% end %>
       </div>
 
-      <p>
-        <%= product.attributes %>
-      </p>
+
+          <p class="break-word">
+            <%= product.description %>
+          </p>
+
 
       <%= link_to product.link, target: '_blank', class: 'btn btn-primary' do %>
         Comprar <i class="fa fa-shopping-cart"></i>

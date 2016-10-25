@@ -6,6 +6,10 @@
   margin-top: 20px;
 }
 
+.break-word{
+  word-wrap: break-word;
+}
+
 .custom-file-input::-webkit-file-upload-button {
  visibility: hidden;
 }

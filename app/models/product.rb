@@ -1,8 +1,9 @@
 require 'carrierwave/orm/activerecord'
 
 class Product < ApplicationRecord
-  validates :name, presence: true
   mount_uploaders :images, ImageUploader
 
+  validates :name, presence: true
+  validates :images, presence: true
   validates :category_id, presence: true
 end

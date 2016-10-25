@@ -5,6 +5,7 @@ pt-BR:
         name: "Nome"
         description: "Descrição"
         link: "Link"
+        images: "Imagens"
         category_id: "Categoria"
         category: "Categoria"
     errors:
