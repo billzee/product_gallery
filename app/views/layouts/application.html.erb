@@ -25,9 +25,12 @@
         </div>
         <div class="collapse navbar-collapse pull-left">
           <ul class="nav navbar-nav">
+            <li>
+              <%= link_to 'Todas', products_path %>
+            </li>
             <% Category.all.each do |category| %>
             <li>
-              <a href=""><%= category.name %></a>
+              <%= link_to category.name, products_path(category_id: category.id) %>
             </li>
             <% end %>
           </ul>

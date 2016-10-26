@@ -2,7 +2,12 @@ class ProductsController < ApplicationController
   before_action :authenticate_admin!
 
   def index
-    @products = Product.order :name
+    if params[:category_id]
+      category_id = params[:category_id]
+      @products = Product.where(category_id: category_id).order :name
+    else
+      @products = Product.order :name
+    end
   end
 
   def create
@@ -37,6 +42,9 @@ class ProductsController < ApplicationController
 
   def destroy
     @product = Product.find params[:id]
+    @product.remove_images!
+    @product.save
+
     if @product.destroy
       redirect_to products_path
       flash[:notice] = "Produto excluído"

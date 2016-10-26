@@ -10,51 +10,59 @@
   </div>
 <% end %>
 
-<% @products.each do |product| %>
-  <div class="row">
-    <div class="col-xs-6 m-t-20">
-      <div class="row text-center">
-        <div class="col-xs-12" id="lightgallery">
-          <% product.images.each_with_index do |img, idx| %>
-            <% if idx == 0 %>
-              <a href="<%= img %>" class="text-center p-0">
-                <%= image_tag img, class: 'thumb-big' %>
-                <hr />
-              </a>
-            <% else %>
-              <a href="<%= img %>" class="text-center p-0">
-                <%= image_tag img, class: 'thumb-small' %>
-              </a>
-            <% end %>
-          <% end %>
-        </div>
-      </div>
-    </div>
-    <div class="col-xs-6">
-      <div class="row">
-        <div class="col-md-8">
-          <h3><%= product.name %></h3>
-        </div>
-        <% if admin_signed_in? %>
-          <div class="col-md-4 text-right">
-            <%= link_to edit_product_path(product), class: 'btn btn-primary m-t-20' do %>
-              <i class="fa fa-edit"></i>
-            <% end %>
-            <%= link_to product_path(product), method: :delete, data: {confirm: 'Tem certeza?'}, class: 'btn btn-danger m-t-20' do %>
-              <i class="fa fa-trash"></i>
+<% if @products.length > 0 %>
+  <% @products.each do |product| %>
+    <div class="row">
+      <div class="col-xs-6 m-t-20">
+        <div class="row text-center">
+          <div class="col-xs-12" id="lightgallery">
+            <% product.images.each_with_index do |img, idx| %>
+              <% if idx == 0 %>
+                <a href="<%= img %>" class="text-center p-0">
+                  <%= image_tag img, class: 'thumb-big' %>
+                  <% if product.images.length > 1 %><hr /><% end %>
+                </a>
+              <% else %>
+                <a href="<%= img %>" class="text-center p-0">
+                  <%= image_tag img, class: 'thumb-small' %>
+                </a>
+              <% end %>
             <% end %>
           </div>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="row">
+          <div class="col-md-8">
+            <h3><%= product.name %></h3>
+          </div>
+          <% if admin_signed_in? %>
+            <div class="col-md-4 text-right">
+              <%= link_to edit_product_path(product), class: 'btn btn-primary m-t-20' do %>
+                <i class="fa fa-edit"></i>
+              <% end %>
+              <%= link_to product_path(product), method: :delete, data: {confirm: 'Tem certeza?'}, class: 'btn btn-danger m-t-20' do %>
+                <i class="fa fa-trash"></i>
+              <% end %>
+            </div>
+          <% end %>
+        </div>
+        <p class="break-word">
+          <%= product.description %>
+        </p>
+        <%= link_to product.link, target: '_blank', class: 'btn btn-success btn-lg' do %>
+          Comprar <i class="fa fa-shopping-cart"></i>
         <% end %>
       </div>
-      <p class="break-word">
-        <%= product.description %>
-      </p>
-      <%= link_to product.link, target: '_blank', class: 'btn btn-success btn-lg' do %>
-        Comprar <i class="fa fa-shopping-cart"></i>
-      <% end %>
     </div>
+    <hr>
+  <% end %>
+<% else %>
+  <div class="alert alert-warning alert-dismissable">
+    <p class="text-center">
+      Não há produtos para exibição
+    </p>
   </div>
-  <hr>
 <% end %>
 
 <div class="row text-center">
