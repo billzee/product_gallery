@@ -55,7 +55,7 @@
         <% end %>
       </div>
     </div>
-    <hr>
+    <% if @products.length > 1 %><hr> <% end %>
   <% end %>
 <% else %>
   <div class="alert alert-warning alert-dismissable">
