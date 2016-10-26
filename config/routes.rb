@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   devise_for :admins
-  root to: "gallery#index"
+  root to: "products#index"
   resources :products
 end

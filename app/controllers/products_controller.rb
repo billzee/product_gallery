@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-  before_action :authenticate_admin!
+  before_action :authenticate_admin!, :except => [:index]
 
   def index
     if params[:category_id]
@@ -8,6 +8,7 @@ class ProductsController < ApplicationController
     else
       @products = Product.order :name
     end
+    @products = @products.page(params[:page]).per(2)
   end
 
   def create
