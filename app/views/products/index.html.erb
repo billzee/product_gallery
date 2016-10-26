@@ -15,12 +15,12 @@
     <div class="row">
       <div class="col-xs-6 m-t-20">
         <div class="row text-center">
-          <div class="col-xs-12" id="lightgallery">
+          <div class="col-xs-12 lightgallery">
             <% product.images.each_with_index do |img, idx| %>
               <% if idx == 0 %>
                 <a href="<%= img %>" class="text-center p-0">
                   <%= image_tag img, class: 'thumb-big' %>
-                  <% if product.images.length > 1 %><hr /><% end %>
+                  <% if product.images.length > 1 %><br /><br><% end %>
                 </a>
               <% else %>
                 <a href="<%= img %>" class="text-center p-0">
@@ -38,7 +38,7 @@
           </div>
           <% if admin_signed_in? %>
             <div class="col-md-4 text-right">
-              <%= link_to edit_product_path(product), class: 'btn btn-primary m-t-20' do %>
+              <%= link_to edit_product_path(product), class: 'btn btn-primary m-t-20 m-r-5' do %>
                 <i class="fa fa-edit"></i>
               <% end %>
               <%= link_to product_path(product), method: :delete, data: {confirm: 'Tem certeza?'}, class: 'btn btn-danger m-t-20' do %>
@@ -73,7 +73,7 @@
 
 <script type="text/javascript">
   $(document).ready(function() {
-    $("#lightgallery").lightGallery({
+    $(".lightgallery").lightGallery({
       thumbnail:true
     });
   });
