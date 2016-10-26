@@ -3,5 +3,19 @@
 #
 # Examples:
 #
+require 'json'
+
 admin = Admin.create(username: 'teste', password: '123456789')
 categories = Category.create([{name: 'categoria1' }, {name: 'categoria2' }])
+products =
+Product.create([
+  {
+    name: 'Nintendo Switch',
+    description: 'A Nintendo anunciou nesta quinta-feira (20) o Nintendo Switch, seu novo videogame.
+    Até então conhecido pelo codinome NX, o Switch é um aparelho modular e híbrido, e
+    pode ser usado ligado a uma TV ou em uma versão portátil e sem fios. Ele chega ao mercado em março de 2017.',
+    link: '',
+    images: '["/uploads/product/images/1/1.jpg", "/uploads/product/images/1/2.jpg", "/uploads/product/images/1/3.jpg"]',
+    category_id: 1
+  }
+])

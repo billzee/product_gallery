@@ -50,8 +50,10 @@
         <p class="break-word">
           <%= product.description %>
         </p>
-        <%= link_to product.link, target: '_blank', class: 'btn btn-success btn-lg' do %>
-          Comprar <i class="fa fa-shopping-cart"></i>
+        <% if product.link.length > 0 %>
+          <%= link_to product.link, target: '_blank', class: 'btn btn-success btn-lg' do %>
+            Comprar <i class="fa fa-shopping-cart"></i>
+          <% end %>
         <% end %>
       </div>
     </div>
