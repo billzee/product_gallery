@@ -4,6 +4,11 @@
 
 $black: #333;
 
+footer{
+	position: fixed;
+  bottom: 0;
+}
+
 .pagination a, .pagination span.current, .pagination span.gap {
 	float: left;
 	padding: 0 14px;
