@@ -13,6 +13,7 @@ class ProductsController < ApplicationController
 
   def create
     @product = Product.new(product_params)
+    p @product.images
     if @product.save
       redirect_to products_path
       flash[:notice] = "Novo Produto criado"
