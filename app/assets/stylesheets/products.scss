@@ -4,9 +4,14 @@
 
 $black: #333;
 
-footer{
+.footer{
+	opacity: 0.5;
 	position: fixed;
   bottom: 0;
+	background: white;
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
 }
 
 .pagination a, .pagination span.current, .pagination span.gap {
@@ -56,6 +61,13 @@ footer{
   margin-right: 5px !important;
 }
 
+.m-5{
+  margin: 5px !important;
+}
+
+.m-t-5{
+  margin-top: 5px !important;
+}
 
 .p-0{
   padding: 0px !important;
@@ -79,8 +91,23 @@ footer{
 }
 
 .thumb-big{
-  max-height: 200px;
-  border: 3px solid $black;
+	width: 100%;
+	height: 300px;
+	border: 3px solid #222;
+	background-clip: content-box;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.thumb-small{
+	width: 100px;
+	height: 100px;
+	border: 1px solid #222;
+	background-clip: content-box;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 .lg-sub-html {
