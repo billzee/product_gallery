@@ -63,6 +63,7 @@ pt-BR:
 
   errors:
     messages:
+      too_long: "está maior do que o limite (no máximo %{count})"
       already_confirmed: "já foi confirmado"
       confirmation_period_expired: "precisa ser confirmada em até %{period}, por favor, solicite uma nova"
       expired: "expirou, por favor, solicite uma nova"
