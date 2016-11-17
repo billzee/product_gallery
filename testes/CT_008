@@ -4,12 +4,12 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://localhost:3000/" />
-<title>CT_003</title>
+<title>CT_008</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">CT_003</td></tr>
+<tr><td rowspan="1" colspan="3">CT_008</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
@@ -18,17 +18,17 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>link=Novo Produto</td>
+	<td>xpath=(//a[contains(@href, '/products/2')])[2]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>name=commit</td>
+	<td>css=button.confirm</td>
 	<td></td>
 </tr>
 <tr>
 	<td>assertElementPresent</td>
-	<td>css=i.fa.fa-warning</td>
+	<td>css=i.fa.fa-check</td>
 	<td></td>
 </tr>
 

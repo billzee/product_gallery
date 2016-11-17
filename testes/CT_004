@@ -43,7 +43,7 @@
 </tr>
 <tr>
 	<td>assertElementPresent</td>
-	<td>//div[2]/div[2]</td>
+	<td>css=i.fa.fa-warning</td>
 	<td></td>
 </tr>
 
