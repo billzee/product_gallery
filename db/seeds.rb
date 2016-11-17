@@ -39,12 +39,5 @@ Product.create([
     link: 'http://rubyonrails.org/',
     images: [File.open(Rails.root + "public/uploads/product/images/4/1.jpg"), File.open(Rails.root + "public/uploads/product/images/4/2.png"), File.open(Rails.root + "public/uploads/product/images/4/3.png")],
     category_id: 1
-  },
-  {
-    name: 'Vinte Mil Léguas Submarinas - Júlio Verne',
-    description: 'Vinte Mil Léguas Submarinas (no original, em francês: Vingt mille lieues sous les mers) é uma das obras literárias mais famosas (se não, a mais famosa) do escritor Júlio Verne, publicada pela primeira vez em 1870.',
-    link: 'https://pt.wikipedia.org/wiki/Vinte_Mil_L%C3%A9guas_Submarinas',
-    images: [File.open(Rails.root + "public/uploads/product/images/5/1.jpg"), File.open(Rails.root + "public/uploads/product/images/5/2.jpg"), File.open(Rails.root + "public/uploads/product/images/5/3.jpg"), File.open(Rails.root + "public/uploads/product/images/5/4.jpg")],
-    category_id: 1
   }
 ])
