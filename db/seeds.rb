@@ -5,7 +5,6 @@
 #
 require 'json'
 
-admin = Admin.create({username: 'teste', password: '123456789'})
 categories = Category.create([{name: 'categoria1' }, {name: 'categoria2' }])
 
 products =
@@ -41,3 +40,5 @@ Product.create([
     category_id: 1
   }
 ])
+
+admin = Admin.create({username: 'teste', password: '123456789'})
