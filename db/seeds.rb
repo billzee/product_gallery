@@ -22,7 +22,7 @@ Product.create([
     name: 'Crash Team Racing',
     description: 'É o primeiro jogo de Crash Bandicoot no gênero de corrida. A história do jogo foca nos esforços de uma equipe de personagens da série Crash Bandicoot, que devem correr contra o Nitros Oxide para salvar seu planeta da destruição. No jogo, os jogadores podem assumir o controle de um dos quinze personagens da série Crash Bandicoot, embora apenas oito estão disponíveis em desde o início. Durante as corridas, itens de impulso pode ser usado para ganhar vantagem.',
     link: 'https://pt.wikipedia.org/wiki/Crash_Team_Racing',
-    images: [File.open(Rails.root + "public/uploads/product/images/2/1.jpg"), File.open(Rails.root + "public/uploads/product/images/2/2.jpg"), File.open(Rails.root + "public/uploads/product/images/2/3.jpg")],
+    images: [File.open(Rails.root + "public/uploads/product/images/2/1.jpeg"), File.open(Rails.root + "public/uploads/product/images/2/2.jpeg"), File.open(Rails.root + "public/uploads/product/images/2/3.jpeg")],
     category_id: 1
   },
   {
