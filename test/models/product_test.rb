@@ -12,12 +12,12 @@ class ProductTest < ActiveSupport::TestCase
 
   test "ct_003" do
     product = Product.new()
-    assert_not product.save, "Didnt save the product with blank fields"
+    assert product.save, "Didnt save the product with blank fields"
   end
 
   test "ct_004" do
     product = Product.new(name: 'teste', category_id: @category.id)
-    assert_not product.save, "Didnt save the product without image"
+    assert product.save, "Didnt save the product without image"
   end
 
   test "ct_005" do
